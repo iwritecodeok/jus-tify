@@ -1,17 +1,19 @@
 @import './Colors';
 
 .login{
-    display:flex;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-color:black;
-    height:100vh;
+    background-color: black;
+    height: 100vh;
     h5{
         color: white;
         font-weight: 200;
     }
     img{
-        width:100%;
+        width: 40vw;
+        object-fit: contain;
     }
     p{
         color:white;
@@ -27,5 +29,6 @@
         font-weight: 400;
         color: white;
         text-decoration: none;
+        margin:20px;
     }
 }
