@@ -8,7 +8,7 @@ function App() {
 
   useEffect(() => {
     const hash = getTokenFromResponse();
-    window.location.hash = "";
+    window.location.hash = "playing_funky_beats";
     const _token = hash.access_token;
     //_token naming convention for  temp
     if (_token) {

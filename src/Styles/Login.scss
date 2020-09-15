@@ -5,30 +5,31 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: $specialBlack;
     height: 100vh;
     h5{
         color: white;
         font-weight: 200;
     }
     img{
-        width: 40vw;
+        width: 32vw;
         object-fit: contain;
     }
     p{
-        color:white;
+        color: $spanishGray;
+        font-size: small;
     }
-    input{
-        
-    }
+
     .login__button{
-        padding:20px;
-        border-radius:99px;
+        padding: 20px;
+        border-radius: 99px;
         background-color: $justifyBlue;
-        font-weight: 800;
         font-weight: 400;
         color: white;
         text-decoration: none;
-        margin:20px;
+        margin: 33px;
+        width: 25vw;
+        display: flex;
+        justify-content: center;
     }
 }

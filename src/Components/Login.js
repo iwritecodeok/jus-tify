@@ -9,7 +9,7 @@ function Login() {
       {/* logo */}
       <img src={Logo} />
       <a href={loginUrl} className="login__button">
-        login with jus-tify
+        login with just-ify
       </a>
       <p>by continuing you are agreeing with just-ify's terms of use.</p>
     </div>
