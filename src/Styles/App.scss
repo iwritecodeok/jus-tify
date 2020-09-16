@@ -1,1 +1,15 @@
-@import './_Colors';
+@import "./_Colors";
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $darkBlack $spanishGray;
+}
+*::-webkit-scrollbar {
+  width: 6px;
+}
+*::-webkit-scrollbar-track {
+  background: $spanishGray;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: $darkBlack;
+  border-radius: 20px;
+}

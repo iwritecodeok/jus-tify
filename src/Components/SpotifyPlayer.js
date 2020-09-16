@@ -7,11 +7,11 @@ function SpotifyPlayer({ spotify }) {
   return (
     <div className="player">
       <div className="player__body">
-        <SideBar />
+        <SideBar spotify={spotify}/>
         <SpotifyBody spotify={spotify} />
       </div>
       {/* footer */}
-      <Footer />
+      <Footer spotify={spotify}/>
     </div>
   );
 }

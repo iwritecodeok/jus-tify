@@ -30,24 +30,31 @@ function App() {
           user: user,
         });
       });
-      spotify.getUserPlaylists().then((playlists) => {
-        dispatch({
-          type: "SET_PLAYLISTS",
-          playlists: playlists,
-        });
-      });
-
-      spotify.getPlaylist('37i9dQZF1DX692WcMwL2yW').then(response =>
-        dispatch({
-          type: "SET_DISCOVER_WEEKLY",
-          discover_weekly: response,
-        }))
+      spotify.getUserPlaylists().then(
+        (playlists) => {
+          dispatch({
+            type: "SET_PLAYLISTS",
+            playlists,
+          });
+        },
+        [token, dispatch]
+      );
+      // https://open.spotify.com/playlist/3i9pc3yUDnN7jeBrF9cXEe?si=P5qAKe2MTLqxgZR9IjnU8Q
+      spotify
+        .getPlaylist("3i9pc3yUDnN7jeBrF9cXEe?si=P5qAKe2MTLqxgZR9IjnU8Q")
+        .then((response) =>
+          dispatch({
+            type: "SET_DISCOVER_WEEKLY",
+            discover_weekly: response,
+          })
+        );
     }
   }, []);
 
   return (
     <div className="app">
-      {token ? <SpotifyPlayer spotify={spotify} /> : <Login />}
+      {!token && <Login />}
+      {token && <SpotifyPlayer spotify={spotify} />}
     </div>
   );
 }
