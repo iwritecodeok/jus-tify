@@ -1,0 +1,48 @@
+@import "./_Colors";
+
+.sidebar {
+  height: 100vh;
+  flex: 0.2;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: $darkBlack;
+  color: white;
+  min-width: 230px;
+
+  .sidebar__logo {
+    object-fit: contain;
+    height: 70px;
+    padding: 10px;
+    margin-right: auto;
+  }
+  .sidebar__title {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 12px;
+  }
+  hr {
+    border: 1px solid #282828;
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+.sidebar__option {
+  display: flex;
+  color: $spanishGray;
+  height: 33px;
+  cursor: pointer;
+  transition: 330ms color ease-in;
+  :hover {
+    color: white;
+  }
+  .sidebarOption__icon {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  p {
+    margin-top: 10px;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+}
