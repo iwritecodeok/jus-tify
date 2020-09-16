@@ -11,7 +11,15 @@
   color: white;
   background: linear-gradient(rgb(71, 69, 87), $darkBlack);
   padding: 30px;
-
+  .body__background {
+    position: absolute;
+    top: 13vh;
+    right: 0;
+    opacity: 0.4;
+    height: 80%;
+    width: 80%;
+    background-color: black;
+  }
   .body__info {
     display: flex;
     // flex-direction: column;

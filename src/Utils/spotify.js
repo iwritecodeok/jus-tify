@@ -1,7 +1,7 @@
 //click login, redirect to spotify for login, come back-login.
 export const authEndpoint = "https://accounts.spotify.com/authorize";
 
-const redirectUri = "http://localhost:3000/";
+const redirectUri = "https://justify-ff4a5.web.app/";
 
 const clientId = "9b164794b4ab4f6f9eca8ee1ecbb4b2f";
 
